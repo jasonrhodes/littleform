@@ -54,25 +54,16 @@ export class SubscribePage extends React.Component {
 
 ## Included Inputs
 
-littleform ships with a number of basic form inputs.
+littleform ships with a number of basic form inputs which each accept the following props:
 
-### Basic input props
+- `name` (string)  
+  This is required and dictates the key which will be used for this form value.
 
-All included inputs accept the following props:
+- `validators` (array of functions)  
+  Optional. If set, all of the included functions will be run when a value is changed. See [validation section](#validation) for more.
 
-`name` (string)
-
-This is required and dictates the key which will be used for this form value.
-
-`validators` (array of functions)
-
-Optional. If set, all of the included functions will be run when a value is changed. All of these functions should return undefined/null if the value is valid. If the value is invalid, the function should return a string representing the error message for the invalid state.
-
-See [validation section](#validation) for more.
-
-`...rest`
-
-The rest of the passed in props (excluding props defined below for other input types) are passed to the underlying HTML element (e.g. `,input>`, `<select>`, etc.), along with the `name` prop.
+- `...rest`  
+  The rest of the passed in props (excluding props defined below for other input types) are passed to the underlying HTML element (e.g. `,input>`, `<select>`, etc.), along with the `name` prop.
 
 #### TextInput
 
