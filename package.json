@@ -1,6 +1,7 @@
 {
   "name": "littleform",
   "version": "1.5.1",
+  "description": "A context-based form library for React that does very little",
   "scripts": {
     "build": "rollup -c",
     "watch": "rollup -cw"
@@ -9,8 +10,13 @@
   "keywords": [
     "react",
     "form",
-    "forms"
+    "forms",
+    "context",
+    "small"
   ],
+  "homepage": "https://github.com/jasonrhodes/littleform",
+  "bugs": "https://github.com/jasonrhodes/littleform/issues",
+  "author": "Jason Rhodes",
   "peerDependencies": {
     "react": "^16.3.0"
   },
@@ -25,5 +31,6 @@
     "@babel/preset-react": "^7.0.0",
     "rollup": "^1.0.0",
     "rollup-plugin-babel": "^4.2.0"
-  }
+  },
+  "license": "Apache-2.0"
 }
