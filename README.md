@@ -179,11 +179,13 @@ _Note: if you are retrieving your initial values from a data store or other asyn
 
 ## Validation
 
-Validators can be passed to any included input via the `validators` prop, which should be an array of validation functions. Each function will receive the current value to be validated and should return null/undefined if the value is valid, or a string (representing the error message for the invalid state) if invalid.
+Validators can be passed to any included input via the `validators` prop, which should be an array of validation functions.
+
+Each function will receive the current value to be validated and should return null/undefined if the value is valid, or a string (representing the error message for the invalid state) if invalid. You can define any kind of validator you want if it follows those conventions.
 
 littleform validation happens _on blur_ and _on submit_, so the validity of an input isn't evaluated until either the input has been touched and blurred, or once the form has been submitted.
 
-`littleform` ships with a few basic validators:
+`littleform` ships with a few basic validators (but you can define any validators you want):
 
 - `validators.required`  
   Ensures a value has been entered for the given input.
