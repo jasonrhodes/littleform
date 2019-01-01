@@ -709,6 +709,7 @@ function Textarea(_ref) {
 }
 
 exports.validators = validators;
+exports.BaseInput = BaseInput;
 exports.SingleCheckbox = SingleCheckbox;
 exports.GroupedCheckbox = GroupedCheckbox;
 exports.CheckboxGroup = CheckboxGroup;

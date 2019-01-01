@@ -1,5 +1,6 @@
 import * as validators from "./validators";
 
+export { BaseInput } from "./BaseInput";
 export { SingleCheckbox, GroupedCheckbox, CheckboxGroup } from "./Checkbox";
 export { ErrorMessage } from "./ErrorMessage";
 export { Form, FormConsumer, withForm } from "./Form";
